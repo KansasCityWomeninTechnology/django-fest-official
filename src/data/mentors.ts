@@ -5,35 +5,33 @@ export interface Mentor {
 }
 
 export const TEAM: Mentor[] = [{
-    name: 'David Fundakowski',
+    name: 'Keen Wilson',
     title: '2019 Mentor',
-    img: 'assets/images/mentors/David.jpg'
+    img: 'assets/images/mentors/Keen.jpg'
+    }, {
+  name: 'Katie Hrenchir',
+  title: '2019 Mentor',
+  img: 'assets/images/mentors/Katie.jpg'
 }, {
     name: 'Jason Otero',
     title: '2019 Mentor',
     img: 'assets/images/mentors/Jason.jpg'
 }, {
-    name: 'Jon Smajda',
+    name: 'Lex Sanders',
     title: '2019 Mentor',
-    img: 'assets/images/mentors/Jon.jpg'
-},
-{
-  name: 'Katie Hrenchir',
-  title: '2019 Mentor',
-  img: 'assets/images/mentors/Katie.jpg'
+    img: 'assets/images/mentors/Lex.jpg'
 }, {
-    name: 'Keen Wilson',
+    name: 'David Fundakowski',
     title: '2019 Mentor',
-    img: 'assets/images/mentors/Keen.jpg'
+    img: 'assets/images/mentors/David.jpg'
 }, {
     name: 'Krista LaFentres',
     title: '2019 Mentor',
     img: 'assets/images/mentors/Krista.jpg'
-},
-{
-    name: 'Lex Sanders',
+}, {
+    name: 'Jon Smajda',
     title: '2019 Mentor',
-    img: 'assets/images/mentors/Lex.jpg'
+    img: 'assets/images/mentors/Jon.jpg'
 },
 {
     name: 'Matthew Copple',
