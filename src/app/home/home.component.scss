@@ -3,7 +3,7 @@
 
 // Global styles
 section {
-    min-height: 600px;
+    min-height: 420px;
     img {
         width: 100%;
     }
@@ -38,6 +38,10 @@ h5 {
       .col-sm-6:first-of-type {
         padding: 40px;
       }
+    }
+
+    a {
+      color: #ffffff;
     }
   }
 
@@ -103,7 +107,7 @@ h5 {
     }
   }
   a {
-      color: #484e78;
+      color: #ffffff;
   }
   ul {
     text-align: left;
