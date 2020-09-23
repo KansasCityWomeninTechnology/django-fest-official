@@ -5,38 +5,36 @@ export interface Mentor {
 }
 
 export const TEAM: Mentor[] = [{
-    name: 'Kylie',
-    title: 'Program Director',
-    img: 'assets/images/team/kylie.jpg'
+    name: 'Keen Wilson',
+    title: '2019 Mentor',
+    img: 'assets/images/mentors/Keen.jpg'
+    }, {
+  name: 'Katie Hrenchir',
+  title: '2019 Mentor',
+  img: 'assets/images/mentors/Katie.jpg'
 }, {
-    name: 'Ashley Shaw',
-    title: 'Co-Director',
-    img: 'assets/images/team/ashley.jpeg'
+    name: 'Jason Otero',
+    title: '2019 Mentor',
+    img: 'assets/images/mentors/Jason.jpg'
 }, {
-    name: 'Jack Kolze',
-    title: 'Marketing Director', 
-    img: 'assets/images/team/jack.png'
-},
-{
-  name: 'Liz Wait',
-  title: 'Sponsorship Director',
-  img: 'assets/images/team/liz.jpg'
-}, {
-    name: 'Jessica Kincaid',
-    title: 'Mentor Director',
-    img: 'assets/images/team/jessica.jpg'
-}, {
-    name: 'Beth Noser',
-    title: 'Volunteer Director',
-    img: 'assets/images/team/beth.jpg'
-},
-{
-    name: 'Carmel N Daniels',
-    title: 'Attendee Director',
-    img: 'assets/images/team/carmel.jpg'
-},
-{
     name: 'Lex Sanders',
-    title: 'Community Outreach Director',
-    img: 'assets/images/team/lex.jpg'
+    title: '2019 Mentor',
+    img: 'assets/images/mentors/Lex.jpg'
+}, {
+    name: 'David Fundakowski',
+    title: '2019 Mentor',
+    img: 'assets/images/mentors/David.jpg'
+}, {
+    name: 'Krista LaFentres',
+    title: '2019 Mentor',
+    img: 'assets/images/mentors/Krista.jpg'
+}, {
+    name: 'Jon Smajda',
+    title: '2019 Mentor',
+    img: 'assets/images/mentors/Jon.jpg'
+},
+{
+    name: 'Matthew Copple',
+    title: '2015-18 Mentor',
+    img: 'assets/images/mentors/Matthew.jpg'
 }];
