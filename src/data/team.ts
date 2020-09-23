@@ -14,7 +14,7 @@ export const TEAM: Member[] = [{
     img: 'assets/images/team/ashley.jpeg'
 }, {
     name: 'Jack Kolze',
-    title: 'Marketing Director', 
+    title: 'Marketing Director',
     img: 'assets/images/team/jack.png'
 },
 {
