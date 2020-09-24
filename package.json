@@ -11,7 +11,7 @@
     "ng": "ng",
     "start": "ng serve --aot --o",
     "build": "ng build --prod",
-    "deploy": "ng build --prod && firebase deploy",
+    "deploy": "ng build --prod",
     "test": "ng test --watch false --browsers ChromeHeadless --sourceMap false --codeCoverage --reporters spec",
     "test:ci": "ng test --watch false --browsers ChromeHeadless --sourceMap false --progress false --codeCoverage",
     "lint": "ng lint",
