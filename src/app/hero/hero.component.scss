@@ -26,10 +26,14 @@
   .techtalk-image {
     display: block;
     height: 400px;
-    width: 100vw;
     background-image: url(src/assets/images/hero.jpg);
     background-size: cover;
-    background-position-y: center;
+    background-position: center;
+
+    @media (max-width: 767px) {
+      background-position: top center;
+    }
+
   }
 }
 

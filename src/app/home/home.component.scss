@@ -128,11 +128,15 @@ h5 {
   .faq-img {
     display: block;
     height: 400px;
-    width: 100vw;
     background-image: url(src/assets/images/growth.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-y: center;
+    background-position: center;
+
+    @media (max-width: 767px) {
+      background-position: top center;
+    }
+
   }
 }
 
@@ -248,5 +252,9 @@ h5 {
   .coach {
     max-width: 140px;
     border-radius: 100%;
+
+    @media (max-width: 767px) {
+      margin-top: 30px;
+    }
   }
-} 
+}
