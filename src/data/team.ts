@@ -5,58 +5,29 @@ export interface Member {
 }
 
 export const TEAM: Member[] = [{
-    name: 'Kylie Humpert',
+    name: 'Tamara Copple',
     title: 'Program Director',
-    img: 'assets/images/team/kylie.jpg'
+    img: 'assets/images/team/Tamara.jpeg'
 }, {
-    name: 'Ashley Shaw',
+    name: 'Matthew Copple',
     title: 'Co-Director',
-    img: 'assets/images/team/ashley.jpeg'
+    img: ''
 }, {
-    name: 'Jack Kolze',
+    name: 'Xiaowen Ao',
     title: 'Marketing Director',
-    img: 'assets/images/team/jack.png'
+    img: ''
 },
 {
-  name: 'Liz Wait',
-  title: 'Sponsorship Director',
-  img: 'assets/images/team/liz.jpg'
-}, {
-    name: 'Jessica Kincaid',
+    name: 'Christine Dillon',
     title: 'Mentor Director',
-    img: 'assets/images/team/jessica.jpg'
+    img: ''
 }, {
     name: 'Beth Noser',
     title: 'Volunteer Director',
     img: 'assets/images/team/beth.jpg'
 },
 {
-    name: 'Carmel N Daniels',
+    name: 'Kit Pyles',
     title: 'Attendee Director',
-    img: 'assets/images/team/carmel.jpg'
-},
-{
-    name: 'Maggie Miller',
-    title: 'Art director',
-    img: 'assets/images/team/MaggieMiller.jpg'
-},
-{
-    name: 'Rebbeca Roman',
-    title: 'Marketing director',
-    img: 'assets/images/team/RebeccaRoman.png'
-},
-{
-    name: 'Melissa Arroyo',
-    title: 'Marketing director',
-    img: 'assets/images/team/MelissaArroyo.jpg'
-},
-{
-    name: 'Jennifer Wadella',
-    title: 'Founder of KCWIT',
-    img: 'assets/images/team/JenniferWadella.png'
-},
-{
-    name: 'Lex Sanders',
-    title: 'Community Outreach Director',
-    img: 'assets/images/team/lex.jpg'
-}];
+    img: ''
+},];
