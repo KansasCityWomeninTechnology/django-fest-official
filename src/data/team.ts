@@ -11,7 +11,7 @@ export const TEAM: Member[] = [{
 }, {
     name: 'Matthew Copple',
     title: 'Co-Director',
-    img: 'assets/images/team/Placeholder_Image.jpg'
+    img: 'assets/images/team/Matt.jpg'
 }, {
     name: 'Xiaowen Ao',
     title: 'Marketing Director',
