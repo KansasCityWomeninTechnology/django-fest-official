@@ -10,12 +10,12 @@
   "scripts": {
     "ng": "ng",
     "start": "node server.js",
-    "build": "ng build --prod",
+    "build": "ng build --prod --baseHref=https://kansascitywomenintechnology.github.io/django-fest-official/",
+    "build:local": "ng build --prod --baseHref=/",
     "deploy": "ng build --prod && firebase deploy",
     "test": "ng test --watch false --browsers ChromeHeadless --sourceMap false --codeCoverage --reporters spec",
     "test:ci": "ng test --watch false --browsers ChromeHeadless --sourceMap false --progress false --codeCoverage",
     "lint": "ng lint",
-    "heroku-postbuild": "ng build --prod",
     "e2e": "ng e2e"
   },
   "private": true,
