@@ -3,8 +3,9 @@
 
 
 #hero {
-  background: $darker-blue;
+  background: $white;
   text-align: center;
+  color: $black;
 
   .container {
     padding: 80px 40px;
@@ -20,20 +21,13 @@
     width: auto;
     background: url(src/assets/images/logos/DjangoFestKC_logo.png) no-repeat 0px 0px;
     background-size: contain;
+    background-position: center;
     margin: 0 auto;
   }
 
-  .techtalk-image {
-    display: block;
-    height: 400px;
-    background-image: url(src/assets/images/hero.jpg);
-    background-size: cover;
-    background-position: center;
-
-    @media (max-width: 767px) {
-      background-position: top center;
-    }
-
+  .btn {
+    background-color: $blue-green;
+    color: $white;
   }
 }
 
