@@ -7,20 +7,20 @@ export interface Member {
 export const TEAM: Member[] = [{
     name: 'Tamara Copple',
     title: 'Program Director',
-    img: 'assets/images/team/Tamara.jpeg'
+    img: 'assets/images/team/Tamara.jpg'
 }, {
     name: 'Matthew Copple',
     title: 'Co-Director',
-    img: ''
+    img: 'assets/images/team/Placeholder_Image.jpg'
 }, {
     name: 'Xiaowen Ao',
     title: 'Marketing Director',
-    img: ''
+    img: 'assets/images/team/Placeholder_Image.jpg'
 },
 {
     name: 'Christine Dillon',
     title: 'Mentor Director',
-    img: ''
+    img: 'assets/images/team/Placeholder_Image.jpg'
 }, {
     name: 'Beth Noser',
     title: 'Volunteer Director',
@@ -29,5 +29,5 @@ export const TEAM: Member[] = [{
 {
     name: 'Kit Pyles',
     title: 'Attendee Director',
-    img: ''
+    img: 'assets/images/team/Placeholder_Image.jpg'
 },];
