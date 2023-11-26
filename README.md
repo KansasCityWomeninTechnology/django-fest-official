@@ -11,4 +11,4 @@ Save images as - mentor_name.jpg.160x160_q85_crop-smart.jpg to ensure formatting
 
 Updates will display locally with your localhost in browser (i.e. localhost:8080)
 
-### **IMPORTANT**: Before making your PR, ```npm run build --prod```
+### **IMPORTANT**: Before making your PR, ```npm run build```
