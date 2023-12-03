@@ -2,7 +2,7 @@
 @import 'typography';
 
 .nav-background {
-    background:  $purple;
+    background:  $darker-blue;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -10,7 +10,7 @@
 }
 
 .dropdown-item:hover{
-    background-color: $dark-purple;
+    background-color: $dark-aqua;
 }
 
 .dropdown-menu>li>a{
@@ -38,7 +38,7 @@
     color: $white;
 
     .dropdown-menu {
-      background-color: $purple;
+      background-color: $aqua;
       border: none;
       display: flex;
       flex-direction: column;
