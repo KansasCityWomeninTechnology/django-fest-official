@@ -34,3 +34,16 @@
 h2 {
   font-weight: 400;
 }
+
+.hero-image {
+  display: block;
+  height: 400px;
+  background-image: url(src/assets/images/hero-image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (max-width: 767px) {
+    background-position: top center;
+  }
+}
