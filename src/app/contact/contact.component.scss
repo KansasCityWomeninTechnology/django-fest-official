@@ -4,7 +4,7 @@
 #contact {
     background: $white;
     padding: 100px 40px;
-    border-bottom: solid 10px $dark-purple;
+    border-bottom: solid 10px $dark-aqua;
 
     @media (max-width: 768px) {
       padding: 60px 40px;
@@ -13,11 +13,11 @@
         margin-bottom: 30px;
     }
     h4, h5, p{
-        color: $purple;
+        color: $teal;
     }
 
     h5 {
-      font-weight: 400;
+      font-weight: 300;
     }
 
     a.kcwit-logo {
@@ -29,11 +29,11 @@
 
     a.btn {
        margin-right: 1em;
-       border-color: $purple;
-       color: $purple;
+       border-color: $teal;
+       color: $teal;
 
        &:hover {
-           background-color: $purple;
+           background-color: $teal;
            color: $white;
        }
     }

@@ -20,7 +20,7 @@ export const TEAM: Member[] = [{
 {
     name: 'Christine Dillon',
     title: 'Mentor Director',
-    img: 'assets/images/team/Christine.jpeg'
+    img: 'assets/images/team/Placeholder_Image.jpg'
 }, {
     name: 'Beth',
     title: 'Volunteer Director',
@@ -29,5 +29,5 @@ export const TEAM: Member[] = [{
 {
     name: 'Kit Pyles',
     title: 'Attendee Director',
-    img: 'src/assets/images/team/kit.jpg'
+    img: 'assets/images/team/Placeholder_Image.jpg'
 },];

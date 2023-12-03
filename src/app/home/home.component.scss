@@ -10,7 +10,7 @@ section {
 }
 
 h5 {
-  font-weight: 350;
+  font-weight: 300;
 }
 
 
@@ -18,7 +18,7 @@ h5 {
 
 // Section specific styles
 #about {
-  background: $purple;
+  background: $green;
   color: $white;
   height: 100%;
   overflow: hidden;
@@ -61,7 +61,7 @@ h5 {
 }
 
 #apply {
-  background: $orange;
+  background: $blue;
   color: $white;
   overflow: hidden;
   padding: 60px 40px;
@@ -95,7 +95,7 @@ h5 {
 }
 
 #faq {
-  background: $purple;
+  background: $blue-green;
   text-align: center;
 
   .container {
@@ -141,7 +141,7 @@ h5 {
 }
 
 #team {
-    background: $purple;
+    background: $aqua;
     text-align: center;
     padding: 100px 0px 100px 0px;
 
@@ -170,7 +170,7 @@ h5 {
 }
 
 #mentor {
-  background: $dark-purple;
+  background: $blue;
   text-align: center;
   padding: 100px 0px 100px 0px;
 
@@ -212,7 +212,7 @@ h5 {
 
     p {
       font-size: 1.5rem;
-      font-weight: 350;
+      font-weight: 300;
       color: $black;
  
     }
