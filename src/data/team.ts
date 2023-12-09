@@ -15,14 +15,14 @@ export const TEAM: Member[] = [{
 }, {
     name: 'Xiaowen Ao',
     title: 'Marketing Director',
-    img: 'assets/images/team/Placeholder_Image.jpg'
+    img: 'assets/images/team/Xiaowen.jpg'
 },
 {
     name: 'Christine Dillon',
     title: 'Mentor Director',
     img: 'assets/images/team/christine.jpg'
 }, {
-    name: 'Beth',
+    name: 'Beth Noser',
     title: 'Volunteer Director',
     img: 'assets/images/team/beth.jpg'
 },

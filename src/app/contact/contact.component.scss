@@ -4,7 +4,7 @@
 #contact {
     background: $white;
     padding: 100px 40px;
-    border-bottom: solid 10px $dark-aqua;
+    border-bottom: solid 10px $dark-purple;
 
     @media (max-width: 768px) {
       padding: 60px 40px;
@@ -13,7 +13,7 @@
         margin-bottom: 30px;
     }
     h4, h5, p{
-        color: $teal;
+        color: $purple;
     }
 
     h5 {
@@ -29,11 +29,11 @@
 
     a.btn {
        margin-right: 1em;
-       border-color: $teal;
-       color: $teal;
+       border-color: $purple;
+       color: $purple;
 
        &:hover {
-           background-color: $teal;
+           background-color: $purple;
            color: $white;
        }
     }
