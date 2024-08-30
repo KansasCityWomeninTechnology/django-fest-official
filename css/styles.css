@@ -1,22 +1,21 @@
-/* Import the Lato font from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 h1 {
-    font-size: 45px; /* Adjust the size as needed */
-    font-weight: bold; /* Optional: make the text bold */
-    margin: 20px 0; /* Optional: add some margin */
+    font-size: 45px;
+    font-weight: bold;
+    margin: 20px 0;
 }
 
 h3 {
-    font-size: 50px; /* Adjust the size as needed */
-    font-weight: bold; /* Optional: make the text bold */
-    margin: 20px 0; /* Optional: add some margin */
+    font-size: 50px;
+    font-weight: bold;
+    margin: 20px 0;
 }
 
 h4 {
-    font-size: 25px; /* Adjust the size as needed */
-    font-weight: bold; /* Optional: make the text bold */
-    margin: 20px 0; /* Optional: add some margin */
+    font-size: 25px;
+    font-weight: bold;
+    margin: 20px 0;
 }
 
 body {
@@ -59,6 +58,17 @@ nav ul li a {
     color: white;
     font-weight: bold;
     font-size: 20px;
+}
+
+nav a {
+    color: initial; 
+    text-decoration: none;
+    transition: color 0.3s ease; 
+}
+
+
+nav a:hover {
+    color: var(--color-purple);
 }
 
 main {
@@ -119,24 +129,24 @@ section {
 }
 
 #faq {
-    background-color: var(--color-light-purple); /* Adjust as needed */
+    background-color: var(--color-light-purple); 
     margin-top: 0; 
     display: flex; 
-    flex-direction: column; /* Stack header and columns vertically */
-    align-items: center; /* Center the header */
+    flex-direction: column;
+    align-items: center;
     color: white;
 }
 
 #faq .section-header {
-    text-align: center; /* Center text within the header */
-    margin-bottom: 20px; /* Space between header and columns */
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 #faq .columns-container {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    max-width: 1200px; /* Optional: limit container width */
+    max-width: 1200px;
 }
 
 #faq .column {
@@ -157,27 +167,27 @@ section {
 
 #register {
     background-color: var(--color-orange);
-    text-align: center; /* Center the content in the register section */
-    padding: 20px; /* Add some padding */
+    text-align: center;
+    padding: 20px;
     color: white;
 }
 
 #register .register-button-container {
-    margin-top: 20px; /* Add space above the button */
+    margin-top: 20px;
 }
 
 #register button {
-    padding: 10px 20px; /* Add padding to the button */
-    font-size: 16px; /* Set font size */
-    cursor: pointer; /* Change cursor to pointer on hover */
-    border: 2px solid white; /* Remove default border */
-    background-color: transparent; /* Set background color */
-    color: white; /* Set text color */
-    border-radius: 5px; /* Add border radius */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
 }
 
 #register button:hover {
-    background-color: var(--color-purple); /* Change background color on hover */
+    background-color: var(--color-purple)
 }
 
 #sponsors {
@@ -189,12 +199,12 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px 0; /* Optional: add some margin */
+    margin: 20px 0;
 }
 
 .sponsor-logo {
-    max-width: 100%; /* Ensure the logo scales properly */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 100%;
+    height: auto;
 }
 
 #team {
@@ -205,41 +215,36 @@ section {
 .team-grid {
     display: flex;
     flex-direction: column;
-    gap: 30px; /* Increased space between rows */
+    gap: 30px;
 }
 
 .team-row {
     display: flex;
-    justify-content: center; /* Center items horizontally */
-    gap: 30px; /* Increased space between team members */
+    justify-content: center;
+    gap: 30px;
 }
 
 .team-member {
     text-align: center;
-    width: 200px; /* Adjusted to fit the larger images */
-    margin: 10px; /* Added margin around each team member */
+    width: 200px;
+    margin: 10px;
 }
 
 .team-photo {
-    width: 200px; /* Adjusted to twice the original size */
-    height: 200px; /* Adjusted to twice the original size */
-    border-radius: 50%; /* Make the photo a circle */
-    object-fit: cover; /* Ensure the photo covers the entire circle */
-    margin-bottom: 10px; /* Space between photo and text */
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
 }
 
 .team-member h4 {
-    margin: 5px 0 0 0; /* Adjust as needed */
+    margin: 5px 0 0 0;
 }
 
 .team-member p {
-    margin: 5px 0 0 0; /* Adjust as needed */
-    font-size: 0.9em; /* Adjust as needed */
-    color: white; /* Adjust as needed */
-}
-
-#mentor {
-    background-color: var(--color-light-purple);
+    margin: 5px 0 0 0;
+    font-size: 0.9em;
     color: white;
 }
 
@@ -249,49 +254,49 @@ section {
 }
 
 #mentor .register-button-container {
-    margin-top: 20px; /* Add space above the button */
+    margin-top: 20px;
 }
 
 #mentor button {
-    padding: 10px 20px; /* Add padding to the button */
-    font-size: 16px; /* Set font size */
-    cursor: pointer; /* Change cursor to pointer on hover */
-    border: 2px solid white; /* Remove default border */
-    background-color: transparent; /* Set background color */
-    color: white; /* Set text color */
-    border-radius: 5px; /* Add border radius */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
 }
 
 #mentor button:hover {
-    background-color: var(--color-orange); /* Change background color on hover */
+    background-color: var(--color-orange);
 }
 
 #contact {
-    text-align: center; /* Center the content in the contact section */
-    padding: 20px; /* Add some padding */
+    text-align: center;
+    padding: 20px;
     background-color: var(--color-light-gray);
     color: var(--color-purple);
 }
 
 #contact .button-container {
     display: flex;
-    justify-content: center; /* Center the buttons horizontally */
-    gap: 10px; /* Add space between the buttons */
-    margin-top: 20px; /* Add space above the buttons */
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
 }
 
 #contact button {
-    padding: 10px 20px; /* Add padding to the button */
-    font-size: 16px; /* Set font size */
-    cursor: pointer; /* Change cursor to pointer on hover */
-    border: 2px solid var(--color-purple); /* Remove default border */
-    background-color: transparent; /* Set background color */
-    color: var(--color-purple); /* Set text color */
-    border-radius: 5px; /* Add border radius */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid var(--color-purple);
+    background-color: transparent;
+    color: var(--color-purple);
+    border-radius: 5px;
 }
 
 #contact button:hover {
-    background-color: var(--color-orange); /* Change background color on hover */
+    background-color: var(--color-orange);
 }
 
 footer {
