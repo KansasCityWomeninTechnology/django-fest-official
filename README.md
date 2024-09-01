@@ -38,10 +38,10 @@ Made by Liz Wait
     ```
 
 ### File Structure
-- `index.html`: The main HTML file.
-- `styles.css`: The main CSS file.
-- `script.js`: The main JavaScript file.
-- `sections/`: Directory containing HTML files for each section.
+- `src/index.html`: The main HTML file.
+- `src/styles.css`: The main CSS file.
+- `src/script.js`: The main JavaScript file.
+- `src/sections/`: Directory containing HTML files for each section.
 
 ### Adding New Sections
 1. Create a new HTML file in the `sections` directory.
@@ -51,10 +51,16 @@ Made by Liz Wait
 1. Fork the repository.
 2. Create a new branch (`git checkout -b feature-branch`).
 3. Make your changes.
-4. Commit your changes (`git commit -m 'Add some feature'`).
-5. Push to the branch (`git push origin feature-branch`).
-6. Open a pull request.
+4. Build the site locally to ensure your changes worked and did not produce any bugs.
+5. Commit your changes (`git commit -m 'Add some feature'`).
+6. Push to the branch (`git push origin feature-branch`).
+7. Open a pull request.
     - Your pull request will need to be approved by another contributor.
+
+## Deployment
+1. Create PR for your updates.
+2. Once PR has been approved by another reviewer, merge your PR to master.
+3. Github Actions will auto deploy changes if merged to master branch.
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
