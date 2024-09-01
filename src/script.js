@@ -1,11 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const main = document.querySelector('main');
-    const sections = getSections();
-
-    loadSections(sections, main);
-});
-
-function getSections() {
+async function getSections() {
     return [
         { id: 'home', file: 'sections/home.html' },
         { id: 'section_image_1', file: 'sections/section_image_1.html' },
@@ -20,20 +13,21 @@ function getSections() {
     ];
 }
 
-function loadSections(sections, main) {
-    sections.forEach((section, index) => {
-        loadSection(section, main, index);
-    });
+async function loadSections(sections, main) {
+    for (let index = 0; index < sections.length; index++) {
+        await loadSection(sections[index], main, index);
+    }
 }
 
-function loadSection(section, main, index) {
-    fetch(section.file)
-        .then(response => response.text())
-        .then(content => {
-            const sectionElement = createSectionElement(section.id, content);
-            main.appendChild(sectionElement);
-        })
-        .catch(error => console.error(`Error loading section ${index}:`, error));
+async function loadSection(section, main, index) {
+    try {
+        const response = await fetch(section.file);
+        const content = await response.text();
+        const sectionElement = createSectionElement(section.id, content);
+        main.appendChild(sectionElement);
+    } catch (error) {
+        console.error(`Error loading section ${index}:`, error);
+    }
 }
 
 function createSectionElement(id, content) {
@@ -42,3 +36,6 @@ function createSectionElement(id, content) {
     sectionElement.innerHTML = content;
     return sectionElement;
 }
+
+const main = document.querySelector('main');
+getSections().then(sections => loadSections(sections, main));
