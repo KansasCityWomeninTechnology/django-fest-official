@@ -1,16 +1,45 @@
-//Install express server    
-const express = require('express');
+const http = require('http');
+const fs = require('fs');
+const path = require('path');
 
-const path = require('path');   
+const mimeTypes = {
+    '.html': 'text/html',
+    '.js': 'text/javascript',
+    '.css': 'text/css',
+    '.png': 'image/png',
+    '.jpg': 'image/jpeg',
+    '.gif': 'image/gif',
+    '.svg': 'image/svg+xml'
+};
 
-const app = express();   
+http.createServer((request, response) => {
+    let filePath = '.' + request.url;
+    if (filePath === './') {
+        filePath = './src/index.html';
+    } else {
+        filePath = './src/' + request.url;
+    }
 
-// Serve only the static files form the docs directory    
-app.use(express.static(__dirname + '/docs'));
+    const extname = String(path.extname(filePath)).toLowerCase();
+    const contentType = mimeTypes[extname] || 'application/octet-stream';
 
-app.get('*', function (req, res) {
-    const index = path.join(__dirname, 'build', 'index.html');
-    res.sendFile(index);
-  });
-// Start the app by listening on the default Heroku port    
-app.listen(process.env.PORT || 8080);
+    fs.readFile(filePath, (error, content) => {
+        if (error) {
+            if (error.code === 'ENOENT') {
+                fs.readFile('./404.html', (error, content) => {
+                    response.writeHead(404, { 'Content-Type': 'text/html' });
+                    response.end(content, 'utf-8');
+                });
+            } else {
+                response.writeHead(500);
+                response.end('Sorry, check with the site admin for error: ' + error.code + ' ..\n');
+                response.end();
+            }
+        } else {
+            response.writeHead(200, { 'Content-Type': contentType });
+            response.end(content, 'utf-8');
+        }
+    });
+}).listen(8080);
+
+console.log('Server running at http://localhost:8080/');

@@ -1,14 +1,60 @@
 # django-fest-offical
-Website built in Angular 8, TypeScript, and SCSS for the Django Fest KC event. 
-Made by Liz Wait, Jessica and Jacqueline
+Website built for the Django Fest KC event. 
+Made by Liz Wait
 
-Note for Mentor additions:
-Save images as - mentor_name.jpg.160x160_q85_crop-smart.jpg to ensure formatting is correct.
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-### To Run Locally
-1. ```npm run build:local```
-2. ```npm run start```
+## Installation
 
-Updates will display locally with your localhost in browser (i.e. localhost:8080)
+### Prerequisites
+- Node.js (https://nodejs.org/)
+- npm (Node Package Manager, comes with Node.js)
 
-### **IMPORTANT**: Before making your PR, ```npm run build```
+### Steps
+1. Clone the repository:
+    ```sh
+    git clone git@github.com:KansasCityWomeninTechnology/django-fest-official.git
+    ```
+2. Change directories to project:
+    ```sh
+    cd django-fest-official
+    ```
+
+## Usage
+
+### Running the Project
+1. Start a local server:
+    ```sh
+    node server.js
+    ```
+
+2. Open your browser and navigate to:
+    ```
+    http://localhost:8080/
+    ```
+
+### File Structure
+- `index.html`: The main HTML file.
+- `styles.css`: The main CSS file.
+- `script.js`: The main JavaScript file.
+- `sections/`: Directory containing HTML files for each section.
+
+### Adding New Sections
+1. Create a new HTML file in the `sections` directory.
+2. Add a new entry to the `getSections` function in `script.js` with the appropriate `id` and `file` path.
+
+## Contributing
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes.
+4. Commit your changes (`git commit -m 'Add some feature'`).
+5. Push to the branch (`git push origin feature-branch`).
+6. Open a pull request.
+    - Your pull request will need to be approved by another contributor.
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
