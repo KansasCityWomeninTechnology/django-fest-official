@@ -418,7 +418,7 @@ section {
     }
 
     nav ul li a {
-        font-size: 3vw;
+        font-size: 4vw;
     }
 
     #faq .columns-container {
@@ -489,28 +489,28 @@ section {
     }
 
     h1 {
-        font-size: 4.5vw;
+        font-size: 5.5vw;
     }
     
     h3 {
-        font-size: 5vw;
+        font-size: 6vw;
     }
     
     h4 {
-        font-size: 2.5vw;
+        font-size: 4vw;
     }
     
     body {
-        font-size: 2.5vw;
+        font-size: 3.5vw;
     }
     
     nav ul li a {
-        font-size: 3vw;
+        font-size: 4vw;
     }
     
     #register button {
         padding: 10px 20px;
-        font-size: 1.6vw;
+        font-size: 2.6vw;
         cursor: pointer;
         border: 2px solid white;
         background-color: transparent;
@@ -519,10 +519,10 @@ section {
     }
     
     #mentor button {
-        font-size: 1.6vw;
+        font-size: 2.6vw;
     }
     
     #contact button {
-        font-size: 1.6vw;
+        font-size: 2.6vw;
     }
 }
