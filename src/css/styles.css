@@ -18,6 +18,40 @@ h4 {
     margin: 20px 0;
 }
 
+.top-nav {
+    display: flex;
+    padding: 10px;
+    background-color: var(--color-orange);
+    position: relative; 
+}
+
+/* @media (min-width: 769px) {
+    .top-nav {
+        justify-content: center;
+        align-items: center;
+    }
+} */
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+    margin-left: auto;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.hamburger-menu {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
 body {
     font-family: 'Lato', Helvetica, sans-serif;
     margin: 0;
@@ -29,8 +63,6 @@ header {
     background-color: var(--color-orange);
     padding: 20px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     position: sticky;
     top: 0;
     z-index: 1000; 
@@ -57,7 +89,7 @@ nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 20px
 }
 
 nav a {
@@ -65,7 +97,6 @@ nav a {
     text-decoration: none;
     transition: color 0.3s ease; 
 }
-
 
 nav a:hover {
     color: var(--color-purple);
@@ -78,8 +109,8 @@ main {
 section {
     margin: 0;
     padding: 30px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 #home {
@@ -96,6 +127,7 @@ section {
     width: 100%;
     height: auto;
     display: block;
+    max-width: 100%;
 }
 
 #about {
@@ -146,7 +178,7 @@ section {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    max-width: 1200px;
+    max-width: 100%;
 }
 
 #faq .column {
@@ -215,13 +247,13 @@ section {
 .team-grid {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
 }
 
 .team-row {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
 }
 
 .team-member {
@@ -287,7 +319,7 @@ section {
 }
 
 .mentor-photo {
-    width: calc(var(--team-photo-width) * 2 / 3); /* 1/3 smaller than team photos */
+    width: calc(var(--team-photo-width) * 2 / 3);
     height: auto;
     border-radius: 50%;
 }
@@ -357,3 +389,140 @@ section {
     color: var(--color-purple);
     text-decoration: underline
 } 
+
+/* Mobile Breakpoints */
+@media (max-width: 768px) {
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100vw; 
+        background-color: var(--color-orange);
+        position: absolute;
+        top: 50px; 
+        left: 0;
+    }
+
+    .nav-links a {
+        padding: 10px 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    nav ul li a {
+        font-size: 3vw;
+    }
+
+    #faq .columns-container {
+        flex-direction: column;
+    }
+
+    #faq .column {
+        flex: 100%;
+        padding: 10px;
+    }
+
+    .logo {
+        width: 80%;
+        height: 80%; 
+    }
+
+    .responsive-image {
+        max-width: 80%;
+        height: auto;
+    }
+
+    .team-grid {
+        flex-direction: column;
+    }
+
+    .team-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .team-photo {
+        max-width: 80%; 
+    }
+
+    .mentor-section {
+        flex-direction: column;
+    }
+
+    .mentor-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mentor-member {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .mentor-photo {
+        max-width: 80%;
+    }
+
+    #about {
+        flex-direction: column;
+    }
+
+    #about .column:nth-child(1) {
+        order: 1; 
+    }
+
+    #about .column:nth-child(2) {
+        order: 2; 
+    }
+
+    h1 {
+        font-size: 4.5vw;
+    }
+    
+    h3 {
+        font-size: 5vw;
+    }
+    
+    h4 {
+        font-size: 2.5vw;
+    }
+    
+    body {
+        font-size: 2.5vw;
+    }
+    
+    nav ul li a {
+        font-size: 3vw;
+    }
+    
+    #register button {
+        padding: 10px 20px;
+        font-size: 1.6vw;
+        cursor: pointer;
+        border: 2px solid white;
+        background-color: transparent;
+        color: white;
+        border-radius: 5px;
+    }
+    
+    #mentor button {
+        font-size: 1.6vw;
+    }
+    
+    #contact button {
+        font-size: 1.6vw;
+    }
+}

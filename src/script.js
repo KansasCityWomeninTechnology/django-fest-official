@@ -39,3 +39,19 @@ function createSectionElement(id, content) {
 
 const main = document.querySelector('main');
 getSections().then(sections => loadSections(sections, main));
+
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    const navLinks = document.querySelector('.nav-links');
+    const navLinkItems = document.querySelectorAll('.nav-links a');
+
+    hamburgerMenu.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+    });
+
+    navLinkItems.forEach(link => {
+        link.addEventListener('click', function() {
+            navLinks.classList.remove('active');
+        });
+    });
+});
