@@ -404,8 +404,8 @@ section {
     }
 
     .nav-links a {
-        padding: 10px 20px; /* Increase padding for better readability */
-        width: 100%; /* Ensure links take full width */
+        padding: 10px 20px;
+        width: 100%;
         box-sizing: border-box;
     }
 
