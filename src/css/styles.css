@@ -36,6 +36,8 @@ h4 {
     display: flex;
     gap: 15px;
     margin-left: auto;
+    font-size:larger;
+    font-weight: bold;
 }
 
 .nav-links a {
