@@ -235,8 +235,10 @@ section {
 }
 
 .sponsor-logo {
-    max-width: 100%;
-    height: auto;
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    padding: 20px; /* Ensures the image scales correctly */
 }
 
 #team {
@@ -319,9 +321,13 @@ section {
 }
 
 .mentor-photo {
-    width: calc(var(--team-photo-width) * 2 / 3);
-    height: auto;
+     /* width: calc(var(--team-photo-width) * 2 / 3); */
     border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
 }
 
 .mentor-member h4,
