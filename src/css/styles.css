@@ -315,18 +315,18 @@ section {
 .mentor-row {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin-bottom: 20px;
 }
 
 .mentor-member {
     text-align: center;
+    width: 25%;
 }
 
 .mentor-photo {
-     /* width: calc(var(--team-photo-width) * 2 / 3); */
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: calc(var(--team-photo-width) / 2); /* Half the size of team photos */
+    height: calc(var(--team-photo-width) / 2); /* Half the size of team photos */
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 10px;
